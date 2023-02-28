@@ -1,0 +1,76 @@
+#!/bin/bpftrrace
+
+#include "structures.h"
+
+
+kprobe:handle_ept_misconfig
+{
+	printf("ept_mis \n")
+}
+
+
+kprobe:handle_ept_violation
+{
+	printf("ept_vio \n")
+}
+
+
+tracepoint:kvm:kvm_page_fault
+{
+	printf("\tkvm_pf gpa: %llx qual: %d\n", args->fault_address, args->error_code);
+}
+
+
+kprobe:kvm_mmu_page_fault
+{
+    printf("\tkvmmmu_pf gpa: %llx\n", arg1);
+}
+
+
+
+tracepoint:kvmmmu:handle_mmio_page_fault
+{
+	printf("\t\tmmio_pf addr: %llx gfn: %llx access: %llx\n", args->addr, args->gfn, args->access);
+}
+
+
+
+
+
+/*
+kprobe:__direct_map
+{
+    printf("\t__map gpa: %12llx write: %12d level: %12d pfn: %12llx\n", arg1, arg2, arg4, arg5);
+}
+
+tracepoint:kvmmmu:kvm_mmu_spte_requested
+{
+    printf("\t\tspte_req gpa: %12llx level: %12d pfn: %12llx\n", args->gfn, args->level, args->pfn);
+}
+
+tracepoint:kvmmmu:kvm_mmu_set_spte
+{
+	printf("\t\tspte level: %d gfn: %llx spte: %llx sptep: %llx\n", args->level, args->gfn, args->spte, args->sptep);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

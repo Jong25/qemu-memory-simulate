@@ -1,0 +1,134 @@
+#!/bin/bpftrace
+
+#include "structures.h"
+
+kprobe:paging64_gva_to_gpa
+{
+	printf("gva2gpa gva: %llx\n", arg1);
+}
+
+kprobe:paging64_walk_addr_generic
+{
+	$wk = ((struct guest_walker*)arg0);
+	printf("\twalker gva: %llx level: %d, max_level: %u\n", arg3, $wk->level, $wk->max_level);
+}
+
+kretprobe:get_cr3
+{
+	printf("\t\tcr3: %llx\n", retval);
+}
+
+tracepoint:kvmmmu:kvm_mmu_pagetable_walk
+{
+	$lv4 = (args->addr & 0xff8000000000) >> 36;
+	$lv3 = (args->addr & 0x7fc0000000) >> 27;
+	$lv2 = (args->addr & 0x3fe00000) >> 18;
+	$lv1 = (args->addr & 0x1ff000) >> 9;
+	printf("\t\taddr: %llx - offset: ", args->addr);
+	printf("%llx %llx %llx %llx   access: %llx\n", (args->addr & 0xff8000000000) >> 36,
+													(args->addr & 0x7fc0000000) >> 27,
+													(args->addr & 0x3fe00000) >> 18,
+													(args->addr & 0x1ff000) >> 9, args->pferr);
+}
+
+
+kprobe:kvm_vcpu_gfn_to_hva_prot
+{
+	printf("\t\tgfn2hva real_gfn: %llx\n", arg1);
+}
+kretprobe:kvm_vcpu_gfn_to_memslot
+{
+	$ms = (struct kvm_memory_slot *)retval;
+	printf("\t\t\tgfn2memslot base_gfn: %llx npages: %lx userspace: %llx\n", $ms->base_gfn, $ms->npages, $ms->userspace_addr);
+}
+kretprobe:kvm_vcpu_gfn_to_hva_prot
+{
+	printf("\t\t\thost addr: %llx pointed value: %llx\n", retval, *retval);
+	printf("\t\t\tguessed values - 888: %llx 040: %llx ac8: %llx 060: %llx\n",  *(retval+0x888),
+																				*(retval+0x040),
+																				*(retval+0xac8),
+																				*(retval+0x060));
+}
+
+/*
+kprobe:kvm_vcpu_gfn_to_hva {printf("kvm_vcpu_gfn_to_hva\n")}
+kprobe:kvm_vcpu_gfn_to_pfn_atomic {printf("kvm_vcpu_gfn_to_pfn_atomic\n")}
+kprobe:kvm_vcpu_gfn_to_pfn {printf("kvm_vcpu_gfn_to_pfn\n")}
+kprobe:kvm_vcpu_gfn_to_page {printf("kvm_vcpu_gfn_to_page\n")}
+*/
+
+/*
+kprobe:__get_user_pages_fast{ printf("__get_user_pages_fast addr: %lx\n", arg0) }
+kprobe:__get_user_pages{ printf("__get_user_pages addr: %lx\n", arg2) }
+kprobe:get_user_pages_remote{ printf("get_user_pages_remote addr: %lx\n", arg2) }
+kprobe:get_user_pages_locked{ printf("get_user_pages_locked addr: %lx\n", arg0) }
+kprobe:get_user_pages_unlocked{ printf("get_user_pages_unlocked addr: %lx\n", arg0) }
+kprobe:get_user_pages{ printf("get_user_pages addr: %lx\n", arg0) }
+kprobe:get_user_pages_fast{ printf("get_user_pages_fast addr: %lx\n", arg0) }
+*/
+
+
+tracepoint:kvmmmu:kvm_mmu_paging_element
+{
+	printf("\t\tpte: %llx, level: %d\n", args->pte, args->level);
+}
+
+
+kprobe:__gfn_to_pfn_memslot
+{
+	$ms = (struct kvm_memory_slot *)arg0;
+    printf("\t\t__gfn2pfn_mem gfn: %llx base_gfn: %llx ", arg1, $ms->base_gfn);
+	printf("npages: %lx userspace: %llx\n", $ms->npages, $ms->userspace_addr);
+}
+kretprobe:__gfn_to_pfn_memslot
+{
+	printf("\t\t__gfn2pfn_mem ret pfn: %llx\n", retval);
+}
+
+
+kprobe:try_async_pf
+{
+	printf("\tasync gva: %llx gfn: %llx\n", arg3, arg2);
+}
+
+
+kprobe:paging64_page_fault
+{
+	printf("pf gva: %llx\n", arg1);
+}
+
+
+kprobe:tdp_page_fault
+{
+	printf("tdp gpa: %12llx\n", arg1);
+}
+/*
+kprobe:__direct_map
+{
+	printf("\t__map gpa: %12llx write: %12d level: %12d pfn: %12llx\n", arg1, arg2, arg4, arg5);
+}
+
+tracepoint:kvmmmu:kvm_mmu_spte_requested
+{
+    printf("\t\tspte_req gpa: %12llx level: %12d pfn: %12llx\n", args->gfn, args->level, args->pfn);
+}
+
+
+
+kprobe:kvm_vcpu_read_guest_page
+{
+        printf("readgp gfn: %12llx dptr: %12llx dval: %12llx ", arg1, arg2, *arg2);
+		printf("offset: %12llx len: %12llx\n", arg3, arg4);
+}
+
+kretprobe:kvm_vcpu_read_guest_page
+{
+        printf("\n");
+}
+
+
+*/
+
+
+
+

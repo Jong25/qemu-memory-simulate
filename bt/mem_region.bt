@@ -1,0 +1,92 @@
+#!/bin/bpftrrace
+
+#include "structures.h"
+
+kprobe:__kvm_set_memory_region
+{
+	printf("__mr kvm: %llx umr: %llx\n", arg0, arg1);
+	$umr = (struct kvm_userspace_memory_region*)arg1;
+	printf("\t\tslot: %12lx  flags: %12lx  ", $umr->slot, $umr->flags);
+	printf("gpa: %17llx  size: %14llx  addr: %12llx\n", $umr->guest_phys_addr, $umr->memory_size, $umr->userspace_addr);
+	@calls = count();
+}
+
+
+kprobe:kvm_free_memslot
+{
+	$old = (struct kvm_memory_slot*) arg1;
+	printf("\t old slot id: %12lx  flags: %12lx  ", $old->id, $old->flags);
+	printf("base_gfn: %12llx  npages: %12lx  addr: %12llx\n", $old->base_gfn, $old->npages, $old->userspace_addr);
+	$new = (struct kvm_memory_slot*) arg2;
+        printf("\t new slot id: %12lx  flags: %12lx  ", $new->id, $new->flags);
+        printf("base_gfn: %12llx  npages: %12lx  addr: %12llx\n", $new->base_gfn, $new->npages, $new->userspace_addr);
+}
+
+
+
+kprobe:kvm_set_memory_region
+{
+	printf("mr kvm: %llx umr: %llx\n", arg0, arg1);
+}
+
+
+
+kprobe:x86_set_memory_region
+{
+        printf("\txmr kvm: %llx id: %lx gpa: %llx size: %lx\n", arg0, arg1, arg2, arg3);
+}
+
+
+
+kprobe:__x86_set_memory_region
+{
+        printf("\t__xmr kvm: %llx id: %lx gpa: %llx size: %lx\n", arg0, arg1, arg2, arg3);
+}
+
+
+kprobe:kvm_arch_destroy_vm
+{
+        printf("\tdestroy kvm: %llx\n", arg0);
+}
+
+
+kprobe:vmx_set_tss_addr
+{
+        printf("\ttss kvm: %llx addr: %llx\n", arg0, arg1);
+}
+
+/*
+tracepoint:kvmmmu:kvm_mmu_spte_requested
+{
+	printf("\t__map gpa: %llx level: %d pfn: %llx\n", args->gfn, args->level, args->pfn);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+tracepoint:syscalls:sys_enter_ioctl
+{
+	printf("ioctl enter %s nr: %d fd: %u cmd: %u arg: %lu\n", comm, args->__syscall_nr, args->fd, args->cmd, args->arg);
+}
+tracepoint:syscalls:sys_exit_ioctl
+{
+	printf("ioctl exit %s ret: %lu\n", comm, args->ret);
+}
+*/

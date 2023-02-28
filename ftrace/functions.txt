@@ -1,0 +1,8 @@
+__get_user_pages_fast
+__get_user_pages
+get_user_pages_remote
+get_user_pages_locked
+get_user_pages_unlocked
+get_user_pages
+get_user_pages_fast
+paging64_walk_addr_generic

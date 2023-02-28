@@ -1,0 +1,21 @@
+#!/bin/bpftrrace
+
+#include "structures.h"
+
+tracepoint:kvmmmu:kvm_mmu_pagetable_walk{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_paging_element{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_set_accessed_bit{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_set_dirty_bit{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_walker_error{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_get_page{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_sync_page{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_unsync_page{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_prepare_zap_page{ printf("%s\n", probe); }
+tracepoint:kvmmmu:mark_mmio_spte{ printf("%s\n", probe); }
+tracepoint:kvmmmu:handle_mmio_page_fault{ printf("%s\n", probe); }
+tracepoint:kvmmmu:fast_page_fault{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_zap_all_fast{ printf("%s\n", probe); }
+tracepoint:kvmmmu:check_mmio_spte{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_set_spte{ printf("%s\n", probe); }
+tracepoint:kvmmmu:kvm_mmu_spte_requested{ printf("%s\n", probe); }
+

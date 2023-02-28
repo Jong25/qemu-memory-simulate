@@ -1,0 +1,94 @@
+#!/bin/bpftrrace
+
+#include "structures.h"
+
+
+tracepoint:exceptions:page_fault_user/comm == "qemu-system-x86"/
+{
+	printf("%s\t\t", comm);
+	printf("%20s addr: %12llx rip: %llx\n", probe, args->address, args->ip);
+}
+
+tracepoint:exceptions:page_fault_kernel/comm == "qemu-system-x86"/
+{
+	printf("%s\t\t", comm);
+	printf("%20s addr: %12llx rip: %llx\n", probe, args->address, args->ip);
+}
+
+
+/*
+kprobe:do_kern_addr_fault
+{
+	printf("%20s addr: %12llx\n", probe, arg2);
+}*/
+
+//kprobe:do_async_page_fault { printf("dapf\n"); }
+//kprobe:__do_page_fault { printf("_dpf\n"); }
+//kprobe:do_page_fault { printf("dpf\n"); }
+
+
+kprobe:kvm_handle_page_fault { printf("%s\n", probe); }
+kprobe:handle_ept_violation { printf("%s\n", probe); }
+
+
+
+
+tracepoint:kvm:kvm_page_fault
+{
+    printf("%20s addr: %12llx\n", probe, args->fault_address);
+}
+
+kprobe:kvm_mmu_page_fault
+{
+	printf("%20s\n", probe);
+}
+
+kprobe:tdp_page_fault
+{
+    printf("%20s gpa: %12llx\n\n", probe, arg1);
+}
+
+
+
+
+kprobe:kvm_handle_page_fault
+{
+	printf("%20s addr: %12llx\n", probe, arg2);
+}
+
+kprobe:paging64_page_fault
+{
+	printf("%20s addr: %12llx\n", probe, arg1);
+}
+
+kprobe:ept_page_fault
+{
+	printf("%20s addr: %12llx\n", probe, arg1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

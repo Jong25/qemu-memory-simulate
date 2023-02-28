@@ -1,0 +1,4 @@
+disk-img/img/guest0.qcow2
+script/__pycache__/
+qemu-monitor
+log

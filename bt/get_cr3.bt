@@ -1,0 +1,8 @@
+#!/bin/bpftrace
+
+#include "structures.h"
+
+kretprobe:get_cr3
+{
+	printf("cr3: %llx\n", retval);
+}

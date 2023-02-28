@@ -1,0 +1,6 @@
+total page table page: 2
+total data page: 21
+total pte: 132
+Page Table level 4 base: 0x12100000 size: 12 total: 131
+		0x12100c60
+		Page Table level 3 base: 0x0 size: 120 total: 120

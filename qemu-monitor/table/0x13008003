@@ -1,0 +1,42 @@
+total page table page: 5
+total data page: 20
+total pte: 668
+Page Table level 4 base: 0x13008000 size: 36 total: 1969
+		0x130080b0
+		Page Table level 3 base: 0x3000 size: 0 total: 0
+		0x130080b8
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x130081c0
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008488
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008600
+		Page Table level 3 base: 0xb4000 size: 512 total: 512
+		0x13008640
+		Page Table level 3 base: 0x3000 size: 0 total: 0
+		0x13008698
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x130088c8
+		Page Table level 3 base: 0xdc000 size: 0 total: 0
+		0x13008908
+		Page Table level 3 base: 0x3000 size: 0 total: 0
+		0x13008910
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008960
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008a18
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008bd0
+		Page Table level 3 base: 0x3000 size: 0 total: 0
+		0x13008bd8
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008ce0
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008e98
+		Page Table level 3 base: 0x3000 size: 0 total: 0
+		0x13008ea0
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008ef0
+		Page Table level 3 base: 0x0 size: 120 total: 120
+		0x13008fa8
+		Page Table level 3 base: 0x0 size: 120 total: 120

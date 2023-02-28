@@ -1,0 +1,565 @@
+Attaching 7 probes...
+	tss kvm: ffffafffc18dd000 addr: feffd000
+	__xmr kvm: ffffafffc18dd000 id: 1fe gpa: fee00000 size: 1000
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87c98
+		slot:          1fe  flags:            0  gpa:          fee00000  size:           1000  addr: 7f0e98cc6000
+	 old slot id:          1fe  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:          1fe  flags:            0  base_gfn:        fee00  npages:            1  addr: 7f0e98cc6000
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87c98
+		slot:        101fe  flags:            0  gpa:          fee00000  size:           1000  addr: 7f0e98cc6000
+	 old slot id:          1fe  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:          1fe  flags:            0  base_gfn:        fee00  npages:            1  addr: 7f0e98cc6000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            0  flags:            0  gpa:                 0  size:       20000000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:        20000  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            1  flags:            2  gpa:          fffc0000  size:          40000  addr: 7f0e94e00000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            1  flags:            2  base_gfn:        fffc0  npages:           40  addr: 7f0e94e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            0  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:        20000  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            0  flags:            0  gpa:                 0  size:          c0000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:           c0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            2  flags:            2  gpa:             c0000  size:          20000  addr: 7f0e94c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            2  flags:            2  base_gfn:           c0  npages:           20  addr: 7f0e94c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            3  flags:            2  gpa:             e0000  size:          20000  addr: 7f0e94e20000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            3  flags:            2  base_gfn:           e0  npages:           20  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            4  flags:            0  gpa:            100000  size:       1ff00000  addr: 7f0e67f00000
+	 old slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            4  flags:            0  base_gfn:          100  npages:        1ff00  addr: 7f0e67f00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            0  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:           c0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:            0  flags:            0  gpa:                 0  size:          a0000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:           a0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:        10000  flags:            0  gpa:                 0  size:          c0000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:           c0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:        10001  flags:            2  gpa:             c0000  size:          20000  addr: 7f0e94c00000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            1  flags:            2  base_gfn:           c0  npages:           20  addr: 7f0e94c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:        10002  flags:            2  gpa:             e0000  size:          20000  addr: 7f0e94e20000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            2  flags:            2  base_gfn:           e0  npages:           20  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:        10003  flags:            0  gpa:            100000  size:       1ff00000  addr: 7f0e67f00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            3  flags:            0  base_gfn:          100  npages:        1ff00  addr: 7f0e67f00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc1963d88
+		slot:        10004  flags:            2  gpa:          fffc0000  size:          40000  addr: 7f0e94e00000
+	 old slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            4  flags:            2  base_gfn:        fffc0  npages:           40  addr: 7f0e94e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:              0  addr: 7f0e94c00000
+	 old slot id:            2  flags:            2  base_gfn:           c0  npages:           20  addr: 7f0e94c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:             e0000  size:              0  addr: 7f0e94e20000
+	 old slot id:            3  flags:            2  base_gfn:           e0  npages:           20  addr: 7f0e94e20000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            0  gpa:            100000  size:              0  addr: 7f0e67f00000
+	 old slot id:            4  flags:            0  base_gfn:          100  npages:        1ff00  addr: 7f0e67f00000
+	 new slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67f00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:          10000  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c00000
+	 new slot id:            2  flags:            0  base_gfn:           c0  npages:           10  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            2  gpa:             d0000  size:          10000  addr: 7f0e94c10000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+	 new slot id:            3  flags:            2  base_gfn:           d0  npages:           10  addr: 7f0e94c10000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            2  gpa:             e0000  size:          10000  addr: 7f0e94e20000
+	 old slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67f00000
+	 new slot id:            4  flags:            2  base_gfn:           e0  npages:           10  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            5  flags:            0  gpa:             f0000  size:       1ff10000  addr: 7f0e67ef0000
+	 old slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            5  flags:            0  base_gfn:           f0  npages:        1ff10  addr: 7f0e67ef0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10000  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:           c0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:             c0000  size:              0  addr: 7f0e94c00000
+	 old slot id:            1  flags:            2  base_gfn:           c0  npages:           20  addr: 7f0e94c00000
+	 new slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:             e0000  size:              0  addr: 7f0e94e20000
+	 old slot id:            2  flags:            2  base_gfn:           e0  npages:           20  addr: 7f0e94e20000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10003  flags:            0  gpa:            100000  size:              0  addr: 7f0e67f00000
+	 old slot id:            3  flags:            0  base_gfn:          100  npages:        1ff00  addr: 7f0e67f00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67f00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10000  flags:            0  gpa:                 0  size:          a0000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:           a0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:             c0000  size:          10000  addr: 7f0e67ec0000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c00000
+	 new slot id:            1  flags:            0  base_gfn:           c0  npages:           10  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            2  gpa:             d0000  size:          10000  addr: 7f0e94c10000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+	 new slot id:            2  flags:            2  base_gfn:           d0  npages:           10  addr: 7f0e94c10000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10003  flags:            2  gpa:             e0000  size:          10000  addr: 7f0e94e20000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67f00000
+	 new slot id:            3  flags:            2  base_gfn:           e0  npages:           10  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10005  flags:            0  gpa:             f0000  size:       1ff10000  addr: 7f0e67ef0000
+	 old slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            5  flags:            0  base_gfn:           f0  npages:        1ff10  addr: 7f0e67ef0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:              0  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:           c0  npages:           10  addr: 7f0e67ec0000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:             d0000  size:              0  addr: 7f0e94c10000
+	 old slot id:            3  flags:            2  base_gfn:           d0  npages:           10  addr: 7f0e94c10000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c10000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            0  gpa:             e0000  size:              0  addr: 7f0e94e20000
+	 old slot id:            4  flags:            2  base_gfn:           e0  npages:           10  addr: 7f0e94e20000
+	 new slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            5  flags:            0  gpa:             f0000  size:              0  addr: 7f0e67ef0000
+	 old slot id:            5  flags:            0  base_gfn:           f0  npages:        1ff10  addr: 7f0e67ef0000
+	 new slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ef0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:       1ff40000  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+	 new slot id:            2  flags:            0  base_gfn:           c0  npages:        1ff40  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:             c0000  size:              0  addr: 7f0e67ec0000
+	 old slot id:            1  flags:            0  base_gfn:           c0  npages:           10  addr: 7f0e67ec0000
+	 new slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:             d0000  size:              0  addr: 7f0e94c10000
+	 old slot id:            2  flags:            2  base_gfn:           d0  npages:           10  addr: 7f0e94c10000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c10000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10003  flags:            0  gpa:             e0000  size:              0  addr: 7f0e94e20000
+	 old slot id:            3  flags:            2  base_gfn:           e0  npages:           10  addr: 7f0e94e20000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10005  flags:            0  gpa:             f0000  size:              0  addr: 7f0e67ef0000
+	 old slot id:            5  flags:            0  base_gfn:           f0  npages:        1ff10  addr: 7f0e67ef0000
+	 new slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ef0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:             c0000  size:       1ff40000  addr: 7f0e67ec0000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+	 new slot id:            1  flags:            0  base_gfn:           c0  npages:        1ff40  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c10000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94c10000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            0  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:           a0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:              0  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:           c0  npages:        1ff40  addr: 7f0e67ec0000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            0  flags:            0  gpa:                 0  size:       20000000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:        20000  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10000  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:           a0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:             c0000  size:              0  addr: 7f0e67ec0000
+	 old slot id:            1  flags:            0  base_gfn:           c0  npages:        1ff40  addr: 7f0e67ec0000
+	 new slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10000  flags:            0  gpa:                 0  size:       20000000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:        20000  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            0  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:        20000  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            0  flags:            0  gpa:                 0  size:          a0000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:           a0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:       1ff40000  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+	 new slot id:            2  flags:            0  base_gfn:           c0  npages:        1ff40  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            2  gpa:          febe0000  size:          10000  addr: 7f0e63a00000
+	 old slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+	 new slot id:            4  flags:            2  base_gfn:        febe0  npages:           10  addr: 7f0e63a00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            2  gpa:          febe0000  size:          10000  addr: 7f0e63a00000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+	 new slot id:            1  flags:            2  base_gfn:        febe0  npages:           10  addr: 7f0e63a00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            0  gpa:          febe0000  size:              0  addr: 7f0e63a00000
+	 old slot id:            4  flags:            2  base_gfn:        febe0  npages:           10  addr: 7f0e63a00000
+	 new slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63a00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:          febe0000  size:              0  addr: 7f0e63a00000
+	 old slot id:            1  flags:            2  base_gfn:        febe0  npages:           10  addr: 7f0e63a00000
+	 new slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63a00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            2  gpa:          feb80000  size:          40000  addr: 7f0e63800000
+	 old slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63a00000
+	 new slot id:            4  flags:            2  base_gfn:        feb80  npages:           40  addr: 7f0e63800000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            2  gpa:          feb80000  size:          40000  addr: 7f0e63800000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63a00000
+	 new slot id:            1  flags:            2  base_gfn:        feb80  npages:           40  addr: 7f0e63800000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            0  gpa:          feb80000  size:              0  addr: 7f0e63800000
+	 old slot id:            4  flags:            2  base_gfn:        feb80  npages:           40  addr: 7f0e63800000
+	 new slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63800000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:          feb80000  size:              0  addr: 7f0e63800000
+	 old slot id:            1  flags:            2  base_gfn:        feb80  npages:           40  addr: 7f0e63800000
+	 new slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63800000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:              0  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:           c0  npages:        1ff40  addr: 7f0e67ec0000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            2  flags:            0  gpa:             c0000  size:           b000  addr: 7f0e67ec0000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ec0000
+	 new slot id:            2  flags:            0  base_gfn:           c0  npages:            b  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            4  flags:            0  gpa:             cb000  size:           3000  addr: 7f0e67ecb000
+	 old slot id:            4  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63800000
+	 new slot id:            4  flags:            0  base_gfn:           cb  npages:            3  addr: 7f0e67ecb000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            5  flags:            0  gpa:             ce000  size:           2000  addr: 7f0e67ece000
+	 old slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ef0000
+	 new slot id:            5  flags:            0  base_gfn:           ce  npages:            2  addr: 7f0e67ece000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            6  flags:            0  gpa:             d0000  size:          20000  addr: 7f0e67ed0000
+	 old slot id:            6  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            6  flags:            0  base_gfn:           d0  npages:           20  addr: 7f0e67ed0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            7  flags:            0  gpa:             f0000  size:          10000  addr: 7f0e67ef0000
+	 old slot id:            7  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            7  flags:            0  base_gfn:           f0  npages:           10  addr: 7f0e67ef0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            8  flags:            0  gpa:            100000  size:       1ff00000  addr: 7f0e67f00000
+	 old slot id:            8  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            8  flags:            0  base_gfn:          100  npages:        1ff00  addr: 7f0e67f00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10000  flags:            0  gpa:                 0  size:              0  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:        20000  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10000  flags:            0  gpa:                 0  size:          c0000  addr: 7f0e67e00000
+	 old slot id:            0  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67e00000
+	 new slot id:            0  flags:            0  base_gfn:            0  npages:           c0  addr: 7f0e67e00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10001  flags:            0  gpa:             c0000  size:           b000  addr: 7f0e67ec0000
+	 old slot id:            1  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63800000
+	 new slot id:            1  flags:            0  base_gfn:           c0  npages:            b  addr: 7f0e67ec0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10003  flags:            0  gpa:             cb000  size:           3000  addr: 7f0e67ecb000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e94e20000
+	 new slot id:            3  flags:            0  base_gfn:           cb  npages:            3  addr: 7f0e67ecb000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10005  flags:            0  gpa:             ce000  size:           2000  addr: 7f0e67ece000
+	 old slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ef0000
+	 new slot id:            5  flags:            0  base_gfn:           ce  npages:            2  addr: 7f0e67ece000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10006  flags:            0  gpa:             d0000  size:          20000  addr: 7f0e67ed0000
+	 old slot id:            6  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            6  flags:            0  base_gfn:           d0  npages:           20  addr: 7f0e67ed0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10007  flags:            0  gpa:             f0000  size:          10000  addr: 7f0e67ef0000
+	 old slot id:            7  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            7  flags:            0  base_gfn:           f0  npages:           10  addr: 7f0e67ef0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10008  flags:            0  gpa:            100000  size:       1ff00000  addr: 7f0e67f00000
+	 old slot id:            8  flags:            0  base_gfn:            0  npages:            0  addr:            0
+	 new slot id:            8  flags:            0  base_gfn:          100  npages:        1ff00  addr: 7f0e67f00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            5  flags:            0  gpa:             ce000  size:              0  addr: 7f0e67ece000
+	 old slot id:            5  flags:            0  base_gfn:           ce  npages:            2  addr: 7f0e67ece000
+	 new slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ece000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            6  flags:            0  gpa:             d0000  size:              0  addr: 7f0e67ed0000
+	 old slot id:            6  flags:            0  base_gfn:           d0  npages:           20  addr: 7f0e67ed0000
+	 new slot id:            6  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ed0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            5  flags:            0  gpa:             ce000  size:          1a000  addr: 7f0e67ece000
+	 old slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ece000
+	 new slot id:            5  flags:            0  base_gfn:           ce  npages:           1a  addr: 7f0e67ece000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            6  flags:            0  gpa:             e8000  size:           8000  addr: 7f0e67ee8000
+	 old slot id:            6  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ed0000
+	 new slot id:            6  flags:            0  base_gfn:           e8  npages:            8  addr: 7f0e67ee8000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10005  flags:            0  gpa:             ce000  size:              0  addr: 7f0e67ece000
+	 old slot id:            5  flags:            0  base_gfn:           ce  npages:            2  addr: 7f0e67ece000
+	 new slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ece000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10006  flags:            0  gpa:             d0000  size:              0  addr: 7f0e67ed0000
+	 old slot id:            6  flags:            0  base_gfn:           d0  npages:           20  addr: 7f0e67ed0000
+	 new slot id:            6  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ed0000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10005  flags:            0  gpa:             ce000  size:          1a000  addr: 7f0e67ece000
+	 old slot id:            5  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ece000
+	 new slot id:            5  flags:            0  base_gfn:           ce  npages:           1a  addr: 7f0e67ece000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10006  flags:            0  gpa:             e8000  size:           8000  addr: 7f0e67ee8000
+	 old slot id:            6  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e67ed0000
+	 new slot id:            6  flags:            0  base_gfn:           e8  npages:            8  addr: 7f0e67ee8000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            0  gpa:          fd000000  size:              0  addr: 7f0e63c00000
+	 old slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+	 new slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:            3  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            3  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            3  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+__mr kvm: ffffafffc18dd000 umr: ffffafffc0a87d88
+		slot:        10002  flags:            1  gpa:          fd000000  size:        1000000  addr: 7f0e63c00000
+	 old slot id:            2  flags:            0  base_gfn:            0  npages:            0  addr: 7f0e63c00000
+	 new slot id:            2  flags:            1  base_gfn:        fd000  npages:         1000  addr: 7f0e63c00000
+
+
+@calls: 112
+
